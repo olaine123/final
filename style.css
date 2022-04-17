@@ -103,6 +103,8 @@ table {
     justify-content: space-between;
     align-items: center;
     display:flex;
+    position: relative;
+    z-index: 2;
 }
 
 .menu{
@@ -111,14 +113,16 @@ table {
     justify-content: space-between;
     width: 250px;
     text-align: center;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .menu li{
     text-align: center;
+    width: 60px;
+    background-color: #fff;
 }
 
-.menu li a{
+.menu a{
     display: block;
     text-decoration: none;
     font-size: 15px;
@@ -131,13 +135,29 @@ table {
     border-bottom: 3px solid #00cc99;
 }
 
+.menu ul{
+    display:none;
+
+}
+.menu ul li{
+    padding: 10px;
+    width: 80px;
+}
 
 /*banner*/
+
+.swiper-container {
+    height: 346px;
+}
+.swiper-slide img{
+    width: 100%;
+}
+/*
 .banner{
-    background-image: url(images/banner.png);
     height: 346px;
     align-items: center;
     position: relative;
+    z-index: 1;
 }
 
 .banner-rect{
@@ -157,7 +177,7 @@ table {
     margin-top: 32px;
     margin-bottom: 32px;
 }
-
+*/
 
 /*content*/
 .course{
@@ -174,6 +194,7 @@ table {
 
 .course-item img{
     width: 100%;
+    margin: 0 auto;
 }
 
 .course-item h2{
@@ -325,6 +346,27 @@ table {
 }
 .content-us span{
     color: #e12d80;
+}
+
+.top{
+    position: fixed;
+    color: #fff;
+    background: #00cc99;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 0;
+    right: 0;
+    border-radius:10px 10px 10px 10px;
+    margin: 20px;
+    border-color: transparent;
+}
+
+.top a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
 }
 
 
